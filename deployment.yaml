@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tugas15-cloud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tugas15-cloud
+  template:
+    metadata:
+      labels:
+        app: tugas15-cloud
+    spec:
+      containers:
+      - name: tugas15-cloud
+        image: tugas15-cloud
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+          limits:
+            cpu: "500m"
