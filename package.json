@@ -1,0 +1,12 @@
+{
+  "name": "cloud-scaling-app",
+  "version": "1.0.0",
+  "description": "Simple scalable web app for cloud computing task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
